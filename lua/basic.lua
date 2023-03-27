@@ -60,6 +60,8 @@ vim.o.mouse = "a"
 
 -- 设置 timeoutlen 为等待键盘快捷键连击时间500毫秒，可根据需要设置
 vim.o.timeoutlen = 500
+-- 自动补全不自动选中
+vim.g.completeopt = "menu,menuone,noselect,noinsert"
 
 -- split window 从下边和右边出现
 vim.o.splitbelow = true
@@ -74,7 +76,8 @@ vim.o.listchars = "space:"
 
 -- 补全增强
 vim.o.wildmenu = true
-
+-- Dont' pass messages to |ins-completin menu|
+vim.o.shortmess = vim.o.shortmess .. 'c'
 -- 补全最多显示10行
 vim.o.pumheight = 10
 

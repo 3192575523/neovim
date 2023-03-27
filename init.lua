@@ -42,3 +42,4 @@ require('lsp.ui')
 require('plugin-config.indent-blankline')
 -- lsp formatter
 require('lsp.formatter')
+require('autopairs')
