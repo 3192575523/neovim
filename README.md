@@ -1,6 +1,11 @@
 # neovim
 It just the basic config of neovim
 ![image](screenshot.png)
+## first download the fd and the ripgrep
+```bash
+sudo pacman -S fd-find
+sudo pacman -S ripgrep
+```
 
 ## download the packer package management
 ```bash
